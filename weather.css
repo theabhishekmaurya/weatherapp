@@ -1,0 +1,186 @@
+#container{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+#searchBar{
+    width: 100%;
+    height:300px;
+    /* border: 1px solid red; */
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/14/04/08/thunderbolt-1905603_960_720.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 20% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search{
+    /* border: 1px solid red; */
+    background-color:rgb(238, 232, 232) ;
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+}
+#weatherDiv{
+    width: 60%;
+    height: 80%;
+    /* border-radius:10px ; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* border: 1px solid green; */
+    /* background-color: rgb(247, 247, 247); */
+}
+#mapDiv{
+    width: 38%;
+    /* border: 1px solid red; */
+    margin-left: 2%;
+}
+#citySearch{
+    border:none;
+    border-color: transparent;
+    width: 85%;
+    height: 90%;
+    font-size: 20px;
+    background: transparent;
+
+}
+#searchIcon{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#searchIcon>img{
+    height: 50%;
+
+}
+#searchBtn{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-family: sans-serif;
+    width: 10%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+#searchBtn>button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#searchBtn>button:hover{
+    background-color: rgb(214, 212, 212);
+    cursor: pointer;
+}
+#weatherTop{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+#weatherDet{
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+#cityDet{
+    /* border: 1px solid green; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#cityDet>div{
+    display: grid;
+    justify-content: end;
+}
+#cityDet>div>h1{
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-bottom: 1%;
+    text-align: end;
+    margin-right: 2%;
+   
+}
+#cityDet>div>h2{   
+    font-family: sans-serif;
+    color: gray;
+    text-align: end;
+    margin-right: 2%;
+}
+#exInfo{
+    margin-top: 3%;
+    width: 50%;
+    /* border: 1px solid; */
+}
+#exInfo>p{
+    font-size: 20px;
+    color: gray;
+    margin-left: 10%;
+    line-height:4px;
+    
+}
+#weatherBottom{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 60%;
+    margin-top: 5%;
+    display: flex;
+}
+.forecastCards{
+    /* border: 1px solid; */
+    width: 24%;
+    margin:1%;
+    height: 90%;
+    border-radius: 10px;
+    justify-content: center;
+    /* background-color: #d8d8d8; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.forecastCards>h2,.forecastCards>p{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.forecastCards>:last-child>p{
+    font-size: 14px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: gray;
+}
+.forecastCards>img{
+    /* border:1px solid; */
+    margin: 0 15%;
+}
+#minMaxTemp{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-left: 4%;
+    /* border:1px solid; */
+}
+#mapDiv>iframe{
+    border-radius: 10px;
+    margin-top: 2%;
+}

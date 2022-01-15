@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div id="searchBar">
+        <div id="search">
+            <div id="searchIcon"><img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt=""></div>
+            <input id="citySearch" type="text" placeholder="Search for city">
+            <div id="searchBtn">
+                <button id="startSearch">Search</button>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="weatherDiv">
+            <div id="weatherTop">
+                <div id="weatherDet">
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png">
+                    <h1 id="temp"></h1>
+                    <h3>°C</h3>
+                    <div id="exInfo">
+                        <p id="pres"></p>
+                        <p id="hum"></p>
+                        <p id="win"></p>
+                    </div>
+                </div>
+                <div id="cityDet">
+                    <div>
+                        <h1 id="city">Faizabad</h1>
+                        <h2 id="desc">Partly Cloudy</h2>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div id="weatherBottom">
+            
+            </div>
+        </div>
+        <div id="mapDiv">
+
+            <!-- <iframe id="map"width="100%" height="80%" X-Frame-Options= "DENY"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Ayodhya&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    
+                
+            </iframe> -->
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="weather.js">
+   
+</script>
