@@ -6,7 +6,7 @@ document.querySelector("#startSearch").addEventListener("click",function(){
    
 })
 async function weatherSearch(city){
-    let firstSearch=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},india&units=metric&APPID=474b8c611d11180ad3d73644d069118f`);
+    let firstSearch=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},india&units=metric&APPID=474b8c611d11180ad3d73644d069118f`);
     let data=await firstSearch.json();
     console.log(data);
     var temp=document.querySelector("#temp");
@@ -33,7 +33,7 @@ async function weatherSearch(city){
 }
 
 async function forecast(city){
-    let secSearch=await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=474b8c611d11180ad3d73644d069118f`);
+    let secSearch=await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=474b8c611d11180ad3d73644d069118f`);
     let data=await secSearch.json();
     console.log(data);
     document.querySelector("#weatherBottom").innerHTML=""
