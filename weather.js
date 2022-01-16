@@ -1,8 +1,14 @@
 document.querySelector("#startSearch").addEventListener("click",function(){
     document.querySelector("#citySearch").style.border="none";
     var city=document.querySelector("#citySearch").value;
-    weatherSearch(city);
-    forecast(city)
+    if(city===""){
+        alert("Enter the correct city name !");
+    }
+    else{
+         weatherSearch(city);
+        forecast(city);   
+    }          
+   
    
 })
 async function weatherSearch(city){
