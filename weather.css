@@ -184,3 +184,108 @@
     border-radius: 10px;
     margin-top: 2%;
 }
+@media only screen and (max-width:375px){
+    #searchBar{
+
+        height: 200px;
+    }
+    #citySearch{
+        font-size: 20px;
+    }
+    #container{
+        display: block;
+        height:1100px
+    }
+    #search{
+        width: 90%;
+        /* border: 1px solid red; */
+        background-color:rgb(238, 232, 232) ;
+    }
+    #searchBtn{
+        width:20%;
+    }
+    #searchBtn>button{
+        
+        font-size: 15px;
+    }
+    #weatherTop{
+        display: block;
+        /* border: 1px solid; */
+        height: 180px;
+    }
+    #weatherDet{
+        font-size:20px;
+        width: 100%;
+        height: 50%;
+    }
+    #cityDet{
+        width:100%;
+        justify-content: center;
+       
+    }
+    #cityDet>div{
+        display: flex;
+        width: 80%;
+        height: 40%;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #cityDet>div>h1{
+        font-size: 35px;
+        font-family: sans-serif;
+        margin-bottom: 8%;
+        
+    }
+    #cityDet>div>h2{   
+        font-family: sans-serif;
+        color: gray;
+        text-align: center;
+    }
+    #weatherDet>img{
+        height: 80%;
+        margin: 0%;
+    }
+    #weatherBottom{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2%;
+        height: auto;
+    }
+    .forecastCards{
+        width: 90%;
+        margin-left: 5%;
+        height: 100%;
+    }
+    #searchIcon>img{
+        height: 40%;
+        
+    }
+    #exInfo{
+        margin-top: 3%;
+        width: 80%;
+        /* border: 1px solid; */
+    }
+    #exInfo>p{
+        font-size: 15px;
+        color: gray;
+        margin-left: 10%;
+        line-height:4px;
+        
+    }
+    #weatherDiv{
+        width: 100%;
+    }
+    .forecastCards>img{
+        margin: 0 20%;
+    }
+    #mapDiv{
+        width: 98%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    #mapDiv>iframe{
+        border-radius: 10px;
+        margin-top: 10%;
+        height: 100px;
+    }
