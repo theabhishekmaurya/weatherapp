@@ -2,7 +2,7 @@ document.querySelector("#startSearch").addEventListener("click",function(){
     document.querySelector("#citySearch").style.border="none";
     var city=document.querySelector("#citySearch").value;
     if(city===""){
-        alert("Enter the correct city name !");
+        alert("Search field can't be empty, Please enter city name !");
     }
     else{
          weatherSearch(city);
